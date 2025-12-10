@@ -1,0 +1,8 @@
+manifest.json
+manifest.firefox.json
+rules.json
+src/urlMapper.ts
+dist/
+/node_modules/
+/_metadata/
+.DS_Store
