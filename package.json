@@ -1,0 +1,20 @@
+{
+  "name": "bad-jira-to-good-jira",
+  "version": "1.0.0",
+  "description": "Redirects Jira links to your Jira clone.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:chrome && npm run build:firefox",
+    "build:chrome": "esbuild src/background.chrome.ts --bundle --outfile=dist/background.chrome.js --format=iife",
+    "build:firefox": "esbuild src/background.firefox.ts --bundle --outfile=dist/background.firefox.js --format=iife"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/chrome": "^0.1.32",
+    "esbuild": "^0.27.1",
+    "typescript": "^5.9.3"
+  }
+}

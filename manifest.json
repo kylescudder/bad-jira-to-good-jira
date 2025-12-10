@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Bad Jira → Good Jira",
+  "version": "1.0.0",
+  "description": "Redirects Jira links to my much better version of Jira.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["https://mpro5jira.atlassian.net/*"],
+   "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }, 
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "jira-clone-rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
