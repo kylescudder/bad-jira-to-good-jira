@@ -4,7 +4,7 @@
   "description": "Redirects Jira links to your Jira clone.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:chrome && npm run build:firefox",
+    "build": "bun run build:chrome && bun run build:firefox",
     "build:chrome": "esbuild src/background.chrome.ts --bundle --outfile=dist/background.chrome.js --format=iife",
     "build:firefox": "esbuild src/background.firefox.ts --bundle --outfile=dist/background.firefox.js --format=iife"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "packageManager": "bun@1.4.2",
   "devDependencies": {
     "@types/chrome": "^0.1.32",
     "esbuild": "^0.27.1",
