@@ -14,7 +14,7 @@
   "type": "commonjs",
   "packageManager": "bun@1.4.2",
   "devDependencies": {
-    "@types/chrome": "^0.1.32",
+    "@types/chrome": "^0.3.0",
     "esbuild": "^0.27.1",
     "typescript": "^5.9.3"
   }
