@@ -5,11 +5,7 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "transform": {
-          "scheme": "https",
-          "host": "jira.kylescudder.co.uk",
-          "path": "/issues\\0"
-        }
+        "regexSubstitution": "https://jira.kylescudder.co.uk/issues/\\1"
       }
     },
     "condition": {
